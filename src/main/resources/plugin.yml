@@ -8,3 +8,6 @@ commands:
   jobcheck:
     description: 현재 직업을 확인합니다.
     usage: /<command>
+  getitem:
+    description: 아이템을 얻습니다.
+    usage: /<command> <아이템 이름>
