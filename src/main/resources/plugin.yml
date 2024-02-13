@@ -1,3 +1,10 @@
 name: ZizonPlugin
 version: 1.0
 main: com.example.ZizonPlugin.ZizonPlugin
+commands:
+  job:
+    description: 직업을 선택합니다.
+    usage: /<command> <농부|광부|사냥꾼>
+  jobcheck:
+    description: 현재 직업을 확인합니다.
+    usage: /<command>
