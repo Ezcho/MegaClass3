@@ -5,19 +5,15 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
 
 
 public class JobCommand implements CommandExecutor {
-
     private ZizonPlugin plugin;
-
     public JobCommand(ZizonPlugin plugin) {
         this.plugin = plugin;
     }
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
@@ -38,7 +34,6 @@ public class JobCommand implements CommandExecutor {
 
         plugin.getConfig().set("users." + player.getUniqueId().toString() + ".job", job);
         plugin.saveConfig();
-
         player.sendMessage(ChatColor.GREEN + "직업 " + job + "을(를) 선택했습니다!");
         return true;
     }
