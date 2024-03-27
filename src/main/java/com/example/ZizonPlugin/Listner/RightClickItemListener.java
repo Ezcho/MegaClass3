@@ -36,6 +36,7 @@ public class RightClickItemListener implements Listener {
                 else{
                     player.sendMessage("지금 손에들고 있는 아이템은 "+handItm+"입니다.");
                 }
+                System.out.println("안녕하세요");
             }
         }
     }
